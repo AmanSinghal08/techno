@@ -1,0 +1,62 @@
+<body style="background-color:#0d0d0d">
+    <h1>aman</h1>
+
+
+
+    <div class="container hed1">
+        <h1 class="btn text-white">SIGN-UP</h1>
+        <br>
+        <br>
+        <input #nameref="ngModel" [(ngModel)]="nameProp" name="name" class="form-control text-dark" placeholder="enter full name">
+        <br>
+        <input #emailref="ngModel" [(ngModel)]="emailProp" name="email" class="form-control text-dark" placeholder="email">
+        <br>
+
+        <input #mobileref="ngModel" [(ngModel)]="mobileProp" name="mobile" class="form-control text-dark" placeholder="mobile number">
+        <br>
+
+        <input #passref="ngModel" [(ngModel)]="passProp" name="password" type="password" class="form-control text-dark" placeholder="password">
+        <br>
+
+        <button type="button" class="btn" style="background-color: #9e0303;" (click)="signUp">
+                    <span style="color: white;">SIGN-UP </span>
+                    
+            </button>
+
+
+    </div>
+
+</body>
+<!-- edit -->
+<!-- 
+<body style="background-color:#0d0d0d">
+    <br>
+
+
+    <form>
+        <div class="container hed1">
+            <h1 class="btn text-white">SIGN-IN</h1>
+            <br>
+            <br>
+
+            <input name="name" class="form-control text-dark" placeholder="enter full name">
+            <br>
+            <input name="email" class="form-control text-dark" placeholder="email">
+            <br>
+
+            <input name="mobile" class="form-control text-dark" placeholder="mobile number">
+            <br>
+
+            <input name="password" type="password" class="form-control text-dark" placeholder="password">
+            <br>
+
+            <button type="button" class="btn" style="background-color: #9e0303;">
+                    <span style="color: white;">SIGN-UP </span>
+                    
+            </button>
+
+
+        </div>
+    </form>
+
+</body> -->

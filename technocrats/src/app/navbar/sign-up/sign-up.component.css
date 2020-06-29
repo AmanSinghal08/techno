@@ -1,0 +1,29 @@
+/* body {
+    width: 200vh;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hed1 {
+    width: 50vw;
+    height: 30vw;
+    margin-left: 50vh;
+    margin-top: 1vh;
+} */
+
+
+/* after */
+
+body {
+    width: auto;
+    height: 150vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hed1 {
+    width: 50vh;
+    height: auto;
+    margin-top: 10px;
+}

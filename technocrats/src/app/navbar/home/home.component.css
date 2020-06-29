@@ -1,0 +1,92 @@
+.fa {
+    padding: 9px;
+    font-size: 20px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 9px;
+    color: white;
+    margin-top: 5px;
+}
+
+.fa-instagram:hover {
+    opacity: 0.7;
+    color: #bc2a8d;
+}
+
+.fa-twitter:hover {
+    opacity: 0.7;
+    color: #1DA1F2;
+}
+
+.fa-facebook:hover {
+    opacity: 0.7;
+    color: hsl(220, 61%, 38%);
+}
+
+.ec-text .fa {
+    margin-top: 0px;
+    margin-right: 20px;
+}
+
+.mylastdiv {
+    margin-left: 200px;
+}
+
+
+/* mycss */
+
+h1 {
+    color: #9e0303;
+    font-family: "Courier";
+    font-size: 30px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type2 1s steps(10, end);
+}
+
+h1:nth-child(2) {
+    animation: type2 5s steps(100, end);
+}
+
+h1 a {
+    color: #9e0303;
+    text-decoration: none;
+}
+
+h2 {
+    color: white;
+    font-family: italic;
+    margin: 5px 0 0 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type2 2s steps(1000, end);
+}
+
+h2:nth-child(2) {
+    animation: type2 2s steps(1000, end);
+}
+
+h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 0;
+    }
+    100% {
+        width: 100;
+    }
+}
+
+ ::selection {
+    background: black;
+}

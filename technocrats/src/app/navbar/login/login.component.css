@@ -1,0 +1,12 @@
+body {
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.hed1 {
+    width: 50vh;
+    height: 35vh;
+    margin-top: 10px;
+}
