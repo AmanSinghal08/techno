@@ -22,6 +22,7 @@ export class SignUpComponent implements OnInit {
   }
   signUp()
   {
+    alert("in 25")
     this.ds.SignUp({name:this.nameProp, email:this.emailProp,password:this.passProp,mobile:this.mobileProp}).subscribe((response)=>{
       alert(JSON.stringify(response));
       if(response.status=="ok"){

@@ -1,8 +1,26 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+var MongoClient=require('mongodb').MongoClient;
+var objectId=require('mongodb').objectId;
+var cors=require('cors');
+var dbname="mydatabase"
+var client=new MongoClient('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',{useNewUrlParser:true});
+const app= express();
+app.use(cors());
+var connection;
+client.connect((err, con) => {
+    if (!err) {
+        connection = con;
+        console.log("Database Connected Successfully");
+    }
+    else {
+        console.log("Databae Could Not Connect Successfully");
+    }
+})
 
 const app = express();
+app.use(cors());
+
 app.post('sign-up', bodyParser.json(), (req, res) => {
     console.log(req.body);
     var collection = collection.db('technocrats').collection('user');
