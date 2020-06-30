@@ -4,9 +4,9 @@ var MongoClient=require('mongodb').MongoClient;
 var objectId=require('mongodb').objectId;
 var cors=require('cors');
 var dbname="mydatabase"
-var client=new MongoClient('mongodb+srv://jeet2027:jeet@2027@cluster0-v2qwj.mongodb.net/mydatabase?retryWrites=true&w=majority',{useNewUrlParser:true});
-const app= express();
-app.use(cors());
+
+var client=new MongoClient('mongodb+srv://aman:1234@technocrats-fvoxq.mongodb.net/techno?retryWrites=true&w=majority',{useNewUrlParser:true});
+
 var connection;
 client.connect((err, con) => {
     if (!err) {
