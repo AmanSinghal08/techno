@@ -21,8 +21,10 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {
   }
   signUp()
-  {
-    this.ds.SignUp({name:this.nameProp, email:this.emailProp,password:this.passProp,mobile:this.mobileProp}).subscribe((response)=>{
+  {alert("hello button clicked");
+    this.ds.SignUp({name:this.nameProp, email:this.emailProp,password:this.passProp,mobile:this.mobileProp})
+    .subscribe((response)=>{
+      alert("2 alert in sign up ts");
       alert(JSON.stringify(response));
       if(response.status=="ok"){
         alert("registration successfully..........");

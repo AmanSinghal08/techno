@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './navbar/home/home.component';
 import { GamesComponent } from './navbar/games/games.component';
 import { AboutComponent } from './navbar/about/about.component';
+import { HttpClientModule } from '@angular/common/http'
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -19,7 +20,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 const appRoutes:Routes=[
    {path:'',component:HomeComponent},
    {path:'games',component:GamesComponent},
-   {path:'about',component:AboutComponent},
+   
    {path:'login',component:LoginComponent},
    {path:'sign-up',component:SignUpComponent},
   
@@ -32,7 +33,7 @@ const appRoutes:Routes=[
     NavbarComponent,
     HomeComponent,
     GamesComponent,
-    AboutComponent,
+  
    
     PageNotFoundComponent,
    
@@ -46,7 +47,8 @@ const appRoutes:Routes=[
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
     CarouselModule.forRoot(),
-    FormsModule
+    FormsModule,
+    HttpClientModule
 
   ],
   providers: [],
