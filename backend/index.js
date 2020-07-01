@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 var MongoClient=require('mongodb').MongoClient;
 var objectId=require('mongodb').objectId;
 var cors=require('cors');
-var dbname="mydatabase"
+var dbname="techno"
 
 var client=new MongoClient('mongodb+srv://aman:1234@technocrats-fvoxq.mongodb.net/techno?retryWrites=true&w=majority',{useNewUrlParser:true});
 
@@ -21,9 +21,9 @@ client.connect((err, con) => {
 const app = express();
 app.use(cors());
 
-app.post('sign-up', bodyParser.json(), (req, res) => {
+app.post('/sign-up', bodyParser.json(), (req, res) => {
     console.log(req.body);
-    var collection = collection.db('technocrats').collection('user');
+    var collection = connection.db('techno').collection('users');
     collection.find({ email: req.body.email }).toArray((err, docs) => {
         if (!err && docs.length > 0) {
             res.send({ status: "failed", data: "email already exits" })

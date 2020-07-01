@@ -11,6 +11,7 @@ export class DataService {
   constructor(private http:HttpClient) { }
   SignUp(d):any
   {
+    alert(JSON.stringify(d));
     return this.http.post('http://localhost:3000/sign-up',d);
 
   }}
