@@ -3,48 +3,7 @@ body {
     padding-top: 10px;
 }
 
-h1 {
-    color: #9e0303;
-    font-family: "Courier";
-    font-size: 35px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 30em;
-    animation: type 8s steps(60, end);
-}
-
-h1:nth-child(2) {
-    animation: type2 10s steps(100, end);
-}
-
-h1 a {
-    color: #9e0303;
-    text-decoration: none;
-}
-
-@keyframes type {
-    from {
-        width: 0;
-    }
-}
-
-@keyframes type2 {
-    0% {
-        width: 0;
-    }
-    50% {
-        width: 0;
-    }
-    100% {
-        width: 100;
-    }
-}
-
- ::selection {
-    background: black;
-}
-
-span {
-    animation: blink 2s infinite;
+a :hover {
+    text-decoration: line-through;
+    color: #0d0d0d;
 }

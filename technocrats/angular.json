@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "technocrats"
+  "defaultProject": "technocrats",
+  "cli": {
+    "analytics": "f9b588f0-698d-4d7b-b1c0-6502dc2f327d"
+  }
 }

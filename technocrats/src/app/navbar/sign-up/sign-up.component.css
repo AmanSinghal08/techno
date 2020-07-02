@@ -27,3 +27,7 @@ body {
     height: auto;
     margin-top: 0px;
 }
+
+.section-title h5:after {
+    background: #0d0d0d;
+}

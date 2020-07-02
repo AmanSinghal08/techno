@@ -10,3 +10,7 @@ body {
     height: 35vh;
     margin-top: 10px;
 }
+
+.section-title h5:after {
+    background: #0d0d0d;
+}

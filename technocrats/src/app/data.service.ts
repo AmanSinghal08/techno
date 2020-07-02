@@ -11,6 +11,17 @@ export class DataService {
   constructor(private http:HttpClient) { }
   SignUp(d):any
   {
+    alert(JSON.stringify(d));
     return this.http.post('http://localhost:3000/sign-up',d);
 
-  }}
+  }
+
+  // mene kiya
+  login(d):any
+  {
+    alert("in dataservice of login");
+    // alert(JSON.stringify(d));
+    return this.http.post('http://localhost:3000/login',d);
+
+  }//mene
+}

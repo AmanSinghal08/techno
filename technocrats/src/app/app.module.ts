@@ -8,7 +8,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './navbar/home/home.component';
 import { GamesComponent } from './navbar/games/games.component';
 import { AboutComponent } from './navbar/about/about.component';
-import { HttpClientModule } from '@angular/common/http'
+
+import { HttpClientModule} from '@angular/common/http'
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';

@@ -21,11 +21,12 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {
   }
   signUp()
-  {alert("hello button clicked");
+  {
+    alert("in 25 signup fun call");
     this.ds.SignUp({name:this.nameProp, email:this.emailProp,password:this.passProp,mobile:this.mobileProp})
     .subscribe((response)=>{
-      alert("2 alert in sign up ts");
       alert(JSON.stringify(response));
+   
       if(response.status=="ok"){
         alert("registration successfully..........");
         this.router.navigate(['/login']);

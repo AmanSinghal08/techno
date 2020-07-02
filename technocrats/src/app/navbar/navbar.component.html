@@ -15,43 +15,47 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <!-- <a routerLink="/"><img src="/assets/image/techno5.png" alt=""></a> -->
-                <h1>Technocrats</h1>
-                <h1>created by Aman
-                    <a href="https://twitter.com/@samarkandiy" title="Azik Samarkandiy"></a> :)
-                </h1>
+
 
             </div>
         </div>
     </div>
 </div>
-<!-- nav-bar start here -->
-<div class="nav-options">
-
-    <div class="container">
 
 
-        <div class="nav-menu">
-            <ul>
-                <li class="active"><a routerLink="/"><span>Home</span></a></li>
+
+<!-- bootstrap nav begin -->
+<nav class="navbar navbar-expand-lg navbar-dark pt-3 pb-3" style="background-color: #9E0303; ">
 
 
-                <li><a routerLink="/login"><span>Login</span></a>
-                </li>
-                <li><a routerLink="/sign-up"><span>Sign-up</span></a>
-                </li>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse row" id="navbarNav">
+        <ul class="navbar-nav col-md-8 mx-auto">
+            <li class="nav-item active ml-5">
+                <a class="nav-link" routerLink="/" style="text-shadow: black 3px 3px 5px; font-family: 'Aclonica', sans-serif; font-size: large;">Home </a>
+            </li>
+            <li class="nav-item active ml-5">
+                <a class="nav-link mr-1" routerLink="/login" style="color: #0d0d0d; text-shadow: white 0.5px 0.5px 4px; font-family: 'Aclonica', sans-serif;"> <strong> login</strong></a>
+            </li>
 
-            </ul>
-        </div>
+            <li class="nav-item active ml-5" [class.signClass]="true">
+                <a class="nav-link mr-5" routerLink="/sign-up" style="color: #0d0d0d; text-shadow: white 0.5px 0.5px 4px; font-family: 'Aclonica', sans-serif;"><strong> Sign-up</strong></a>
+            </li>
+        </ul>
     </div>
-</div>
-<script src="my.js"></script>
+</nav>
+
+<!-- bootstrap nav end -->
+<script src="my.js "></script>
 <!-- Js Plugins -->
-<script src="../../../assets/js/jquery-3.3.1.min.js"></script>
-<script src="../../../assets/js/bootstrap.min.js"></script>
-<script src="../../../assets/js/j/srcquery.magnific-popup.min.js"></script>
-<script src="../../../assets/js/circle-progress.min.js"></script>
-<script src="../../../assets/js/jquery.barfiller.js"></script>
-<script src="../../../assets/js/jquery.slicknav.js"></script>
-<script src="../../../assets/js/owl.carousel.min.js"></script>
-<script src="../../../assets/js/main.js"></script>
+<script src="../../../assets/js/jquery-3.3.1.min.js "></script>
+<script src="../../../assets/js/bootstrap.min.js "></script>
+<script src="../../../assets/js/j/srcquery.magnific-popup.min.js "></script>
+<script src="../../../assets/js/circle-progress.min.js "></script>
+<script src="../../../assets/js/jquery.barfiller.js "></script>
+<script src="../../../assets/js/jquery.slicknav.js "></script>
+<script src="../../../assets/js/owl.carousel.min.js "></script>
+<script src="../../../assets/js/main.js "></script>
 <router-outlet></router-outlet>

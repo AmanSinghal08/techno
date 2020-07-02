@@ -1,44 +1,25 @@
 <html>
 
-
-
-<body style="background-color: #0d0d0d;">
+<body style="background-color: #0d0d0d; font-family: 'Aclonica', sans-serif;; font-size: large;">
     <br>
     <div class="container">
 
         <div class="row mt-5">
-            <!-- <div class="container  hed1">
-                <h1 class="btn text-white">FOR PLAY</h1>
-                <br>
-                <br>
 
-                <input #emailref="ngModel" [(ngModel)]="emailProp" name="email" class="form-control text-dark" placeholder="mobile number">
+            <div class="container  hed1">
+                <h1 class="btn text-white" style="font-family: 'Aclonica', sans-serif;">LOGIN</h1>
                 <br>
-
-                <input #passref="ngModel" [(ngModel)]="passwordProp" name="password" type="password" class="form-control text-dark" placeholder="password">
                 <br>
-                <button type="button" class="btn" (click)="login()" style="background-color: #9e0303;">
+                <input #mobileref="ngModel" [ngModel]="mobileProp" class="form-control text-dark" name="mobile" placeholder="mobile number" required>
+                <br>
+                <input #passref="ngModel" [ngModel]="passProp" type="password" name="password" class="form-control text-dark" placeholder="password" required>
+                <br>
+                <button type="button" class="btn" style="background-color: #9e0303;" (click)="loginPlay()">
                 <span style="color: white;">login as player</span>
                 
               </button>
-            </div> -->
-
-            <div class="container  hed1">
-                <h1 class="btn text-white">LOGIN</h1>
-                <br>
-                <br>
-
-                <input class="form-control text-dark" placeholder="mobile number">
-                <br>
-
-                <input type="password" class="form-control text-dark" placeholder="password">
-                <br>
-                <button type="button" class="btn" style="background-color: #9e0303;">
-                <span style="color: white;">login as player</span>
-                
-              </button> <button type="button" class="btn ml-5" style="background-color: #9e0303;">
+                <button type="button" class="btn ml-5" style="background-color: #9e0303;" (click)="loginHost()">
                 <span style="color: white;">login as host</span>
-                
               </button>
 
             </div>
