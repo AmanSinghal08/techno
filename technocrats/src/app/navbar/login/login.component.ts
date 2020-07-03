@@ -15,13 +15,14 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   
-    if(localStorage.getItem('email')){
-      this.router.navigate(['/']);
+    if(localStorage.getItem('mobile')){
+      this.router.navigate(['/dashboard']);
     }
   }
 
   loginPlay(){
-    alert("in login play fun call");
+    alert("in login play fun call"+JSON.stringify({password:this.passProp,mobile:this.mobileProp}));
+
     this.ds.login({password:this.passProp,mobile:this.mobileProp})
     .subscribe((response)=>{
       
@@ -32,9 +33,9 @@ export class LoginComponent implements OnInit {
         
         alert("registration successfully..........");
         localStorage.setItem('mobile',response.data[0].mobile);
-        localStorage.setItem('password',response.data[0].password);
+     
 
-        this.router.navigate(['/']);
+        this.router.navigate(['/dashboard']);
       }
       else{
         alert("unsuccessfull login.....");

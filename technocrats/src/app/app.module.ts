@@ -18,6 +18,7 @@ import { LoginComponent } from './navbar/login/login.component';
 import { SignUpComponent } from './navbar/sign-up/sign-up.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const appRoutes:Routes=[
    {path:'',component:HomeComponent},
@@ -41,7 +42,9 @@ const appRoutes:Routes=[
    
     LoginComponent,
    
-    SignUpComponent
+    SignUpComponent,
+   
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

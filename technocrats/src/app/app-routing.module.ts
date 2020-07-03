@@ -7,6 +7,7 @@ import { GamesComponent} from './navbar/games/games.component';
 import { SignUpComponent} from './navbar/sign-up/sign-up.component';
 import { PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -30,6 +31,7 @@ const appRoutes:Routes=[
   
   {path:'login',component:LoginComponent},
   {path:'sign-up',component:SignUpComponent},
+  {path:'dashboard',component:DashboardComponent},
  
   {path:'**',component:PageNotFoundComponent}
 ]

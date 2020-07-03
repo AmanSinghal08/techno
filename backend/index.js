@@ -23,6 +23,7 @@ const app = express();
 app.use(cors());
 
 app.post('/sign-up', bodyParser.json(), (req, res) => {
+    console.log("in sign up");
     console.log(req.body);
     var collection = connection.db('techno').collection('users');
     collection.find({ email: req.body.email }).toArray((err, docs) => {
@@ -44,6 +45,7 @@ app.post('/sign-up', bodyParser.json(), (req, res) => {
 app.post('/login', bodyParser.json(), (req, res) => {
     var collection = connection.db('techno').collection('users');
     collection.find(req.body).toArray((err, docs) => {
+        console.log(docs);
         if (!err && docs.length > 0) {
             res.send({ status: "ok", data: docs });
         } else {

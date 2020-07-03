@@ -10,9 +10,9 @@
                 <h1 class="btn text-white" style="font-family: 'Aclonica', sans-serif;">LOGIN</h1>
                 <br>
                 <br>
-                <input #mobileref="ngModel" [ngModel]="mobileProp" class="form-control text-dark" name="mobile" placeholder="mobile number" required>
+                <input #mobileref="ngModel" [(ngModel)]="mobileProp" class="form-control text-dark" name="mobile" placeholder="mobile number" required>
                 <br>
-                <input #passref="ngModel" [ngModel]="passProp" type="password" name="password" class="form-control text-dark" placeholder="password" required>
+                <input #passref="ngModel" [(ngModel)]="passProp" type="password" name="password" class="form-control text-dark" placeholder="password" required>
                 <br>
                 <button type="button" class="btn" style="background-color: #9e0303;" (click)="loginPlay()">
                 <span style="color: white;">login as player</span>
