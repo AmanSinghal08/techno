@@ -22,6 +22,7 @@ export class DataService {
     alert("in dataservice of login");
     // alert(JSON.stringify(d));
     return this.http.post('http://localhost:3000/login',d);
-
   }//mene
+
+ 
 }

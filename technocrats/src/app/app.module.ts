@@ -6,8 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './navbar/home/home.component';
-import { GamesComponent } from './navbar/games/games.component';
-import { AboutComponent } from './navbar/about/about.component';
 
 import { HttpClientModule} from '@angular/common/http'
 
@@ -19,14 +17,16 @@ import { SignUpComponent } from './navbar/sign-up/sign-up.component';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GamesComponent } from './games/games.component';
+
 
 const appRoutes:Routes=[
    {path:'',component:HomeComponent},
-   {path:'games',component:GamesComponent},
+ 
    
    {path:'login',component:LoginComponent},
    {path:'sign-up',component:SignUpComponent},
-  
+  {path:'dashboard',component:DashboardComponent },
    {path:'**',component:PageNotFoundComponent}
 ]
 
@@ -35,16 +35,13 @@ const appRoutes:Routes=[
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    GamesComponent,
-  
-   
+      LoginComponent,
+       SignUpComponent,
+       DashboardComponent,
     PageNotFoundComponent,
+    GamesComponent
    
-    LoginComponent,
-   
-    SignUpComponent,
-   
-    DashboardComponent
+  
   ],
   imports: [
     BrowserModule,

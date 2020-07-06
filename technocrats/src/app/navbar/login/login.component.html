@@ -3,27 +3,29 @@
 <body style="background-color: #0d0d0d; font-family: 'Aclonica', sans-serif;; font-size: large;">
     <br>
     <div class="container">
+        <form action="/action_page.php">
+            <div class="row mt-5">
 
-        <div class="row mt-5">
-
-            <div class="container  hed1">
-                <h1 class="btn text-white" style="font-family: 'Aclonica', sans-serif;">LOGIN</h1>
-                <br>
-                <br>
-                <input #mobileref="ngModel" [(ngModel)]="mobileProp" class="form-control text-dark" name="mobile" placeholder="mobile number" required>
-                <br>
-                <input #passref="ngModel" [(ngModel)]="passProp" type="password" name="password" class="form-control text-dark" placeholder="password" required>
-                <br>
-                <button type="button" class="btn" style="background-color: #9e0303;" (click)="loginPlay()">
-                <span style="color: white;">login as player</span>
+                <div class="container  hed1">
+                    <h1 class="btn text-white" style="font-family: 'Aclonica', sans-serif;">LOGIN</h1>
+                    <br>
+                    <br>
+                    <input #mobileref="ngModel" [(ngModel)]="mobileProp" class="form-control text-dark" name="mobile" placeholder="mobile number" required>
+                    <br>
+                    <input #passref="ngModel" [(ngModel)]="passProp" type="password" name="password" class="form-control text-dark" placeholder="password" required>
+                    <br>
+                    <label>click to 'login' and play your favorite games</label>
+                    <button type="button" class="btn mt-1" style="background-color: #9e0303; width: 100%;" (click)="loginPlay()">
+                <span style="color: white;">login</span>
                 
               </button>
-                <button type="button" class="btn ml-5" style="background-color: #9e0303;" (click)="loginHost()">
-                <span style="color: white;">login as host</span>
-              </button>
 
+
+
+
+                </div>
             </div>
-        </div>
+        </form>
 
     </div>
 </body>

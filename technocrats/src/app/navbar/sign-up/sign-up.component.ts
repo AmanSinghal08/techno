@@ -8,11 +8,11 @@ import { Router } from '@angular/router'
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  nameProp;
-  emailProp;
+  nameProp:string;
+  emailProp:string;
 
-  mobileProp;
-  passProp;
+  mobileProp:string;
+  passProp:string;
 
   
 
@@ -22,6 +22,7 @@ export class SignUpComponent implements OnInit {
   }
   signUp()
   {
+    if(this.mobileProp.length>0){
     alert("in 25 signup fun call");
     this.ds.SignUp({name:this.nameProp, email:this.emailProp,password:this.passProp,mobile:this.mobileProp})
     .subscribe((response)=>{
@@ -36,5 +37,5 @@ export class SignUpComponent implements OnInit {
       }
     })
   }
-
+  }
 }
